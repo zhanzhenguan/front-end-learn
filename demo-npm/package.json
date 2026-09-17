@@ -1,0 +1,19 @@
+{
+  "name": "demo-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node main.js",
+    "build": "echo '项目打包中........'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "jquery": "^4.0.0",
+    "random": "^5.5.1"
+  }
+}
