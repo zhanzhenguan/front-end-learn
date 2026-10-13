@@ -3,6 +3,23 @@
 import {useRouter} from 'vue-router'
 
 const router = useRouter();
+
+
+
+// params ===>  /common/:id
+// query ===>  /common?id=123
+
+
+const t = ()=>{
+
+  // 跳转文章详情页 隐式传递id
+  router.push(`/common/${id}`)
+  // 跳转文章详情页 通过路由路径参数传递id
+  router.push({ path: `/common/${id}` })
+  // 跳转文章详情页 通过路由名称，参数传递id
+  router.push({ name: 'common', params: { id:123 } })
+
+}
 let paramsTest = ()=> {
   // router.push('/common/222/zhangsan/188')
 
